@@ -34,7 +34,6 @@
 		<![endif]-->
     </head>
     <body>
-		<!-- Main Wrapper -->
         <div class="main-wrapper">
 		
 			<!-- Header -->
@@ -45,17 +44,17 @@
             @include('includes.backend.sidebar')
 			<!-- /Sidebar -->
 			
-			<!-- Page Wrapper -->
             <div class="page-wrapper">
+				
 				@yield('content_one')
-				<!-- Page Content -->
                 <div class="content container-fluid">
 					
-					<!-- Page Header -->
+
+
+
 					<div class="page-header">
 						@yield('page-header')
 					</div>
-					<!-- /Page Header -->
 					
 					@if ($errors->any())
 						<div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -69,23 +68,18 @@
 					@endif
 					@if(session('success'))
 					<div class="alert alert-success alert-dismissible fade show" role="alert">
-						<strong>Success! </strong>{{session('success')}}
+						<strong>Sukses! </strong>{{session('success')}}
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					@endif
-					<!-- Content Starts -->
 						@yield('content')
-					<!-- /Content End -->
 					
                 </div>
-				<!-- /Page Content -->
 				
             </div>
-			<!-- /Page Wrapper -->
         </div>
-		<!-- /Main Wrapper -->
 		
 		
     </body>

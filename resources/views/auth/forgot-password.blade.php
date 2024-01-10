@@ -13,10 +13,10 @@
     </div>
     @enderror
     <div class="form-group text-center">
-        <button class="btn btn-primary account-btn" type="submit">Reset Password</button>
+        <button class="btn btn-primary" type="submit">Reset Password</button>
     </div>
     <div class="account-footer">
-        <p>Remember your password? <a href="{{route('login')}}">Login</a></p>
+        <p>Sudah Ingat Password Anda? <a href="{{route('login')}}">Login</a></p>
     </div>
 </form>
 

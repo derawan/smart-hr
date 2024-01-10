@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -29,7 +29,7 @@
 		<!-- Main Wrapper -->
         <div class="main-wrapper">
 			<div class="account-content">
-				<a href="{{route('job-list')}}" class="btn btn-primary apply-btn">Apply Job</a>
+				{{-- <a href="{{route('job-list')}}" class="btn btn-primary apply-btn">Apply Job</a> --}}
 				<div class="container">
 				
 					<!-- Account Logo -->

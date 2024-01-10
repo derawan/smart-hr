@@ -13,7 +13,7 @@ class SettingsController extends Controller
 {
     
     public function index(ThemeSettings $settings){
-        $title = 'theme settings';
+        $title = 'Setting Theme';
         return view('backend.settings.theme',compact(
             'title','settings'
         ));
@@ -43,12 +43,12 @@ class SettingsController extends Controller
         $settings->currency_code = $request->currency_code;
         $settings->currency_symbol = $request->currency_symbol;
         $settings->save();
-        $notification = notify('theme has been updated');
+        $notification = notify('theme telah diperbaharui');
         return back()->with($notification);
     }
 
     public function invoice(InvoiceSettings $settings){
-        $title = 'invoice settings';
+        $title = 'Setting Invoice';
         return view('backend.settings.invoice', compact(
             'title','settings'
         ));
@@ -67,12 +67,12 @@ class SettingsController extends Controller
         $settings->prefix = $request->prefix;
         $settings->logo = $logo;
         $settings->save();
-        $notification = notify('invoice settings updated');
+        $notification = notify('Setting Invoice diperbaharui');
         return back()->with($notification);
     }
 
     public function attendance(AttendanceSettings $settings){
-        $title = 'attendance settings';
+        $title = 'Setting Attendance';
         return view('backend.settings.attendance',compact(
             'title','settings'
         ));
@@ -86,12 +86,12 @@ class SettingsController extends Controller
         $settings->checkin_time = $request->checkin;
         $settings->checkout_time = $request->checkout;
         $settings->save();
-        $notification = notify('attendance settings updated');
+        $notification = notify('Setting Attendance diperbaharui');
         return back()->with($notification);
     }
 
     public function company(CompanySettings $settings){
-        $title = 'company settings';
+        $title = 'Setting Data Perusahaan';
         return view('backend.settings.company',compact(
             'title','settings'
         ));
@@ -126,7 +126,7 @@ class SettingsController extends Controller
         $settings->fax = $request->fax;
         $settings->website_url = $request->website_url;
         $settings->save();
-        $notification = notify('company settings has been updated');
+        $notification = notify('Data Perusahaan Telah Diperbaharui');
         return back()->with($notification);
     }
    

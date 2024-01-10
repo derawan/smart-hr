@@ -9,28 +9,19 @@
 <div class="row">
     <div class="col-md-8 offset-md-2">
     
-        <!-- Page Header -->
-        <div class="page-header">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="page-title">Company Settings</h3>
-                </div>
-            </div>
-        </div>
-        <!-- /Page Header -->
         
         <form action="{{route('settings.company')}}" method="post">
             @csrf
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Company Name <span class="text-danger">*</span></label>
+                        <label>Nama Perusahaan <span class="text-danger">*</span></label>
                         <input class="form-control" name="company_name" type="text" value="{{$settings->company_name}}">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Contact Person</label>
+                        <label>Kontak Person</label>
                         <input class="form-control" name="contact_person" value="{{$settings->contact_person}}" type="text">
                     </div>
                 </div>
@@ -38,31 +29,31 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Address</label>
+                        <label>Alamat</label>
                         <input class="form-control" name="address" value="{{$settings->address}}" type="text">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
-                        <label>Country</label>
+                        <label>Negara</label>
                         <input type="text" name="country" value="{{$settings->country}}" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
-                        <label>City</label>
+                        <label>Kota</label>
                         <input class="form-control" name="city" value="{{$settings->city}}" type="text">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
-                        <label>State/Province</label>
+                        <label>Propinsi</label>
                         <input type="text" name="province" value="{{$settings->province}}" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
-                        <label>Postal Code</label>
+                        <label>Kode Pos</label>
                         <input class="form-control" name="postal_code" value="{{$settings->postal_code}}" type="text">
                     </div>
                 </div>
@@ -76,7 +67,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Phone Number</label>
+                        <label>No. Telp</label>
                         <input class="form-control" name="phone" value="{{$settings->phone}}" type="text">
                     </div>
                 </div>
@@ -84,7 +75,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Mobile Number</label>
+                        <label>No. HP</label>
                         <input class="form-control" name="mobile" value="{{$settings->mobile}}" type="text">
                     </div>
                 </div>
@@ -98,13 +89,13 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Website Url</label>
+                        <label>Url</label>
                         <input class="form-control" name="website_url" value="{{$settings->website_url}}" type="text">
                     </div>
                 </div>
             </div>
             <div class="submit-section">
-                <button type="submit" class="btn btn-primary submit-btn">Save</button>
+                <button type="submit" class="btn btn-primary submit-btn">Simpan</button>
             </div>
         </form>
     </div>

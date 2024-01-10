@@ -9,7 +9,7 @@
 <form action="{{route('login')}}" method="post">
     @csrf
     <div class="form-group">
-        <label>Email</label>
+        <label>Alamat Email</label>
         <input name="email" type="text" value="{{old('email') ?? 'admin@admin.com'}}" class="form-control @error('email') border-danger @enderror">
     </div>
     @error('email')
@@ -24,7 +24,7 @@
             </div>
             <div class="col-auto">
                 <a class="text-muted" href="{{route('forgot-password')}}">
-                    Forgot password?
+                    Lupa password?
                 </a>
             </div>
         </div>
@@ -37,10 +37,10 @@
     </div>
     @enderror
     <div class="form-group text-center">
-        <button class="btn btn-primary account-btn" type="submit">Login</button>
+        <button class="btn btn-primary w-100 p-15" type="submit">{{__("Login")}}</button>
     </div>
     <div class="account-footer">
-        <p>Don't have an account yet? <a href="{{route('register')}}">Register</a></p>
+        <p><a href="{{route('register')}}">{{__("Mendaftar")}}</a></p>
     </div>
 </form>
 @endsection

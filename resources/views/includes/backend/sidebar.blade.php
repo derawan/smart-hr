@@ -13,11 +13,11 @@
                     <a href="#"><i class="la la-cube"></i> <span> Apps</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
 
-                        <li><a class="{{ route_is('contacts') ? 'active' : '' }}" href="{{route('contacts')}}">Contacts</a></li>
+                        <li><a class="{{ route_is('contacts') ? 'active' : '' }}" href="{{route('contacts')}}">{{__("Contact")}}</a></li>
                     </ul>
                 </li>
                 <li class="menu-title">
-                    <span>Employees</span>
+                    <span>Kepegawaian</span>
                 </li>
                 <li class="submenu">
                     <a href="#" class="{{ route_is(['employees','employees-list']) ? 'active' : '' }} noti-dot"><i class="la la-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>

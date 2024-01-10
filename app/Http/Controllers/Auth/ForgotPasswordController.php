@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Password;
 class ForgotPasswordController extends Controller
 {
     public function index(){
-        $title = "forgot Password";
+        $title = "Lupa Password";
         return view('auth.forgot-password',compact('title'));
     }
 
